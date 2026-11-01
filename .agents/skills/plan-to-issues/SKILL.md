@@ -30,6 +30,16 @@ Closing one, with the closing comment from AGENTS.md:
 gh issue close <n> -c "<closing comment>"
 ```
 
+## What every issue carries
+
+Decided by the human (Nathan) on 2026-11-01 for plan morning-digest; keep it for every plan:
+
+- The body opens with `Source: plan.md § <n>` (the plan's section, e.g. `§ 1`, `§ 2a`).
+- Label `plan:<plan name from plan.md frontmatter>`, e.g. `plan:morning-digest`.
+- Then `## Scope`, `## Done when`, `## Blocked by` (real issue numbers).
+- Close only when "Done when" holds, a review included: a preview issue stays open until the
+  reviewer has looked.
+
 ## No `gh`
 
 Steps 1–4 hold either way. GitHub reachable another way (a connector, the REST API, the web UI):
